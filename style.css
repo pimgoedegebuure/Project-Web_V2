@@ -1,20 +1,27 @@
-header img{
-  height: 1.5em;
-  margin-left: -2em;
- 
+header > img{
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: .5em auto;
+  
+  
 }
 header{
-  background-color: black;
-  height: 4em;
+  background-color: #73D700;
+  margin: -.5em;
 }
 form{
   margin: 1em 0 0 auto;
 }
  
 nav{
+ 
+  overflow: auto;
+  white-space: nowrap;
+  
   background-color: #73D700;
   margin:-.5em;
-  padding: .5em;
+  padding: 1em;
 }
   nav ul{
   display: flex;
