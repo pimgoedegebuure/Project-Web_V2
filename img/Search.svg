@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px"><title>se r1</title><path d="M24,38.22A38,38,0,1,1,62,76.45,38.15,38.15,0,0,1,24,38.22Zm10.15,0A27.85,27.85,0,1,0,62,10.15,28,28,0,0,0,34.16,38.22Z"/><rect x="-3.62" y="73.89" width="49.42" height="10.15" transform="translate(-49.58 37.9) rotate(-44.88)"/><text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by i cons</text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100.6" style="enable-background:new 0 0 100 100.6;" xml:space="preserve">
+<title>se r1</title>
+<path d="M24,38.2c0.1-21,17.2-37.9,38.2-37.8s37.9,17.2,37.8,38.2c-0.1,20.9-17.1,37.8-38,37.8C41,76.4,24,59.3,24,38.2z M34.2,38.2
+	C34.3,53.6,46.8,66,62.2,65.8C77.6,65.7,90,53.2,89.8,37.8C89.7,22.5,77.3,10.2,62,10.1C46.6,10.2,34.1,22.8,34.2,38.2L34.2,38.2z"
+	/>
+<rect x="-3.6" y="73.9" transform="matrix(0.7086 -0.7056 0.7056 0.7086 -49.5804 37.8907)" width="49.4" height="10.2"/>
+</svg>
