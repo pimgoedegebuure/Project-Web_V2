@@ -30,6 +30,7 @@ nav{
     nav ul{
       display: flex;
       margin: 0 auto;
+      padding-left: 0;
   }
 
     nav ul li{
@@ -72,6 +73,7 @@ body{
         display:flex;
         flex-direction: column;
         background-color: #F7F7F7;
+        background-color: gray;
         padding: .5em;
         text-align: center;
         margin: .5em auto;
@@ -128,6 +130,23 @@ body{
   }
   article:nth-child(odd){
     grid-column: right;
+  }
 
-
-}
+  @media screen and (min-width: 87em){
+    
+    main{
+    display: grid;
+    grid-template-columns: [left] 25% [leftt] 25% [right2] 25% [right] 25%;
+   
+    }
+    
+    article:nth-child(1){
+      grid-column:left;
+    }
+    article:nth-child(2){
+      grid-column: leftt;
+    }
+    article:nth-child(3){
+      grid-column: right2;
+    }
+  }
