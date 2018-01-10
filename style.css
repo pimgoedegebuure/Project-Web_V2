@@ -58,7 +58,7 @@ body{
         text-align: center;
         font-size: 1.5em;
         margin: 0em;
-        padding-top: .5em;
+        padding-top: 1em;
         font-weight: 800;
       }
       h2{
@@ -80,7 +80,7 @@ body{
         display:flex;
         flex-direction: column;
         background-color: #F7F7F7;
-        background-color: gray;
+        /background-color: gray;
         /*! padding: .5em; */
         text-align: center;
         margin: 1em auto;
