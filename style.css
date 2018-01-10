@@ -81,12 +81,12 @@ body{
         flex-direction: column;
         background-color: #F7F7F7;
         background-color: gray;
-        padding: .5em;
+        /*! padding: .5em; */
         text-align: center;
         margin: 1em auto;
-        width:auto;
+        width:90%;
         max-width: 25em;
-        border-radius: 0.5em;
+        border-radius: 0.2em;
       }
           article img{
             width: 100%;
