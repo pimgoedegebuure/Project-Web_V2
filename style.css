@@ -12,14 +12,14 @@ header{
     header > div > a > img{
       margin-top: .5em;
       height: 1.5em;
-      width:2em;
+      width:1.5em;
       margin-right:1em;
 
       }
 
     header > div > a:first-child> img{
       height: 1.5em;
-      width: 10em;
+      width: 12em;
       margin-left: 0em;
       left: 0;
     }
@@ -29,8 +29,7 @@ nav{
   overflow: auto;
   white-space: nowrap;
   background-color: #73D700;
-  margin:-.5em;
-  padding: 1em;
+  padding: .5em;
 }
 
     nav ul{
