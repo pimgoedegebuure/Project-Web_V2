@@ -11,15 +11,15 @@ header{
     }
     header > div > a > img{
       margin-top: .5em;
-      height: 2em;
-      width:2.5em;
+      height: 1.5em;
+      width:2em;
       margin-right:1em;
 
       }
 
     header > div > a:first-child> img{
-      height: 2em;
-      width: 12em;
+      height: 1.5em;
+      width: 10em;
       margin-left: 0em;
       left: 0;
     }
@@ -40,7 +40,7 @@ nav{
   }
 
     nav ul li{
-      font-size:1.3em;
+      font-size:1em;
       margin: 0 auto;
       list-style: none;
       color: white;
@@ -56,13 +56,13 @@ body{
 }
       h1{
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         margin: 0em;
         padding-top: .5em;
         font-weight: 800;
       }
       h2{
-        font-size: 1.8em;
+        font-size: 1.3em;
         margin: 0em;
         padding-bottom: .5em;
       }
@@ -98,10 +98,10 @@ body{
             color: white;
             text-decoration: none;
             text-align: center;
-            padding: .3em;
+            padding: .1em;
             margin: auto;
-            border-radius: .5em;
-            font-size: 1.4em
+            border-radius: .3em;
+            font-size: 1.2em
           }
           article > a:hover {
             background-color: #5CAC00;
