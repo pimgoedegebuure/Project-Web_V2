@@ -19,7 +19,7 @@ header{
 
     header > div > a:first-child> img{
       height: 1.5em;
-      width: 12em;
+      width: 10em;
       margin-left: 0em;
       left: 0;
     }
@@ -28,8 +28,9 @@ header{
 nav{
   overflow: auto;
   white-space: nowrap;
-  background-color: #73D700;
+  background-color:#73D700; 
   padding: .5em;
+  border-top: 1px solid #73eb00;
 }
 
     nav ul{
