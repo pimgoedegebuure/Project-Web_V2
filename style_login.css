@@ -1,0 +1,40 @@
+h1{
+  margin-bottom: 1.5em;
+}
+
+form{
+  
+}
+form input{
+  font-family: 'Roboto_Condensed', sans-serif;
+}
+form > input:first-child{
+  display:block;
+  margin:.5em 10%;
+  width:80%;
+}
+form > input:nth-child(2){
+  display:block;
+  margin: 1em 10%;
+  width:80%;
+}
+form > input:nth-child(3){
+  display: inline-block;
+  margin-right:10%;
+  width: 30%;
+  height: 3em;
+  border-radius: .5em;
+  background-color: #ffad00;
+  border:none;
+  float:right;
+}
+form > a{
+  display:block;
+margin: 1.5em auto;
+  width:80%;
+  text-align: center;
+}
+form > label{
+  display:inline-block;
+  margin-left:10%;
+}
