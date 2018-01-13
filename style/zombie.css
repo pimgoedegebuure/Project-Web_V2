@@ -1,0 +1,27 @@
+main > div{
+  background-image: url("../img/verhalen/zombie-small.png");
+  width: 100%;
+  margin: 0 auto;
+  /*! background-color:#dc3e3e; */
+  height: 150em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width:45em){
+  main > div{
+  background-image: url("../img/verhalen/zombie-med.png");
+  width: 210%;
+  height: 65em;
+   
+  }
+}
+@media screen and (min-width:55em){
+  main > div{
+  background-image: url("../img/verhalen/zombie-wide.png");
+  width: 300%;
+    height: 95em;
+    
+}
+}

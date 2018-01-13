@@ -87,6 +87,7 @@ body{
 
       article{
         display:flex;
+        
        flex-direction: column;
         background-color: #F7F7F7;
         background-color: gray;
@@ -113,13 +114,44 @@ body{
             text-decoration: underline;
           }
           article > div{
-             background-image: url("img/cover.png");
+             background-image: url("../img/cover.png");
              background-position:center;
              background-size: 110%;
              height:8em;
             border-radius: .5em;
           
           }
+article > div > button{
+ background-color: #F7F7F7;
+  float:right;
+  width: 3em;
+  height: 3em;
+  margin: 0;
+  border-radius: 0 .5em;
+  padding: .1em;
+  background-image:url("../img/clock.svg");
+  background-repeat: no-repeat;
+  transition: all 2s;
+}
+.adding{
+  background-image: url("../img/check.svg");
+}
+nav > ul > li:nth-child(3){
+  position: relative;
+}
+.unread[data-badge]:after{
+  content:attr(data-badge);
+   position:absolute;
+   margin-left: .5em;
+   font-size:.8em;
+   background:green;
+   color:white;
+   width:1.5em;height:1.5em;
+   text-align:center;
+   
+   border-radius:50%;
+   box-shadow:0 0 1px #333;
+}
 
 
 @media screen and (min-width:45em){
@@ -167,6 +199,11 @@ body{
             /*! margin-bottom: -1.5em; */
             max-height: 20em;
           }
+          .add{
+            background-color: #F7F7F7;
+            float:left;
+            border-radius: .5em 0;
+  }
   
           article >h2{
             grid-column: 2;
@@ -187,9 +224,6 @@ body{
             top: 5em;
             grid-column: 2;
             grid-row:1;
-            p
-            
-        
           }
           
           
@@ -230,10 +264,23 @@ body{
     }
     article > p{
       margin-top: 0;
+      margin-left: .5em;
       height:  10em;
+      text-align: left;
+    }
+    article > h2{
+      margin-left: .5em;
+      padding: 0;
     }
     article > a{
       position:initial;
       margin-top: 0;
+    }
+    .add{
+      float: right;
+      border-radius: 0 .5em
+    }
+    .add:hover{
+      background-color:gray;
     }
   }
