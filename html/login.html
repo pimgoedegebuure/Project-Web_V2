@@ -13,58 +13,57 @@
 <body>
   <header>
     <div>
-      <a href="index.html"> <img src="../img/previewv2.jpg" alt=""></a>
+      <a href="../index.html"> <img src="../img/previewv2.jpg" alt=""></a>
       <a href=""><img src="../img/search.png" alt=""></a>
       <a href=""><img src="../img/person.png" alt=""></a>
     </div>
 
     <nav>
       <ul>
-        <li>Verhalen</li>
-        <li>tags</li>
-        <li>favorieten</li>
-        <li>tags</li>
-        <li>favorieten</li>
-        <li>tags</li>
-        <li>favorieten</li>
+        <a href="verhalen.html"><li>Alle verhalen</li></a>
+        <a href="tags.html"><li>tags</li></a>
+        <a href="lezen.html"><li class="" data-badge="1">Later lezen</li></a>
+        <a href="fav.html"><li>Favorieten</li></a>
       </ul>
     </nav>
   </header>
-  <h2>Ik heb een account</h2>
-  <form action="index.html">
-    <label> E-mailadres:
-    <input type="email" name="email" value="Email Bijv. flixbus@fb.com">
-  </label>
-    <label> Wachtwoord:
-    <input type="password" name="password" value="Wachtwoord">
-  </label>
-    <label>
-    <input type="button" name="Submit" value="Log in">
-  </label>
-    <label><input type="checkbox" name="Remember" value="Onthoud mij" > Onthoud mij </label>
 
+  <form action="index.html">
+    <h2>Ik heb een account</h2>
+    <label> E-mailadres
+    <input type="email" name="email" value="" required>
+  </label>
+    <label> Wachtwoord
+    <input type="password" name="password" value="" required>
+  </label>
+
+    <input type="button" name="Submit" value="Log in">
+
+  <input type="checkbox" name="Remember" id="rememberMe" value="Onthoud mij" >
+  <label for="rememberMe">Onthoud mij</label>
     <a href=""> Wachtwoord vergeten? </a>
 
   </form>
   <div>
     <span>of</span>
   </div>
-  <h2>Ik wil me aanmelden</h2>
+
   <form action="index.html">
+    <h2>Ik wil me aanmelden</h2>
     <label>voornaam
-      <input type="text" name="vnaam" value="Voornaam">
+      <input type="text" name="vnaam" value="" required>
       </label>
     <label> Achternaam
-      <input type="text" name="anaam" value="Achternaam">
+      <input type="text" name="anaam" value="">
     </label>
-    <label> E-mailadres:
-      <input type="email" name="email" value="Email Bijv. flixbus@fb.com">
+    <label> E-mailadres
+      <input type="email" name="email" value="" required>
     </label>
-    <label> Wachtwoord:
-    <input type="password" name="password" value="Wachtwoord">
+    <label> Wachtwoord
+    <input type="password" name="password" value="" required>
   </label>
     <label for="">Herhaal Wachtwoord
-    <input type="password" name="password" value="Wachtwoord">
+    <input type="password" name="password" value="" required>
   </label>
 
     <input type="button" name="Submit" value="Aanmelden">

@@ -1,58 +1,50 @@
 h2{
-  margin: 1em auto;
-  width: 50%;
+  margin-top: .5em;
 }
-
 form{
-  
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 90%
+ }
+
 form input{
-  font-family: 'Roboto_Condensed', sans-serif;
+  width: 100%;
+  height: 2.5em;
+  border-radius: .5em;
+  border: 1px solid lightgray;
 }
-  input{
-  display:block;
-  margin:.5em 10%;
-  width:80%;
-  height: 3em;
+form input:invalid{
+  border: 1px solid #FF5700;
 }
-input[type=button]{
-  height:3em;
-  width: 6em;
-  border-radius: .2em;
-  background-color:#ffad00;
+form input[type=button]{
+  width: 30%;
+  align-self: flex-end;
+  margin: .5em 0;
+  background-color: #ffad00;
+  border-radius: .5em;
   border: none;
-  color: white;
-  font-weight:600;
-  float: right;
+  color:white;
+  font-weight: 400;
 }
-form > label{
-  margin: .5em 10%;
-  width: 80%; 
-  font-size: .8em; 
+form input[type=button]:hover{
+  background-color: ##ffc54c;
 }
-form:first-of-type > label:nth-child(4){
-  margin: 0;
-  width: 10em;
-  display:inline-block;
+form input[type=checkbox]{
   float:left;
-  
-}
-form:first-of-type > label:nth-child(4)>input{
-   display:initial;
   width: initial;
-  float: left;
+}
+form:invalid{
+  background-color
 }
 
-form > a{
-  display:block;
-margin: 1.5em auto;
-  width:80%;
-  text-align: center;
-  
+form label{
+  align-content: center;
+  font-size: .8em;
+  justify-content: flex-start; 
+ 
 }
-
-
-
 body > div{
   position: relative;
   text-align: center;
@@ -75,4 +67,28 @@ body > div:before{
   left:1em;
   right: 1em;
   border-top: 1px solid #c8c8c8
+}
+#rememberMe{
+ align-self:flex-start;
+ flex-flow:  row;
+}
+#rememberMe + label{
+ display:inline-flex;
+ width: initial;
+}
+
+@media screen and (min-width:45em){
+  form{
+    max-width: 20em;
+    
+  }
+  h2{
+    margin-left: 0;
+    margin-bottom: .5em;
+    padding: 0;
+  }
+  body > div{
+    max-width: 20em;
+    margin: 0 auto;
+  }
 }

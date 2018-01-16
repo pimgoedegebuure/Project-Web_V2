@@ -1,9 +1,10 @@
 main > div{
   background-image: url("../img/verhalen/zombie-small.png");
   width: 100%;
+
   margin: 0 auto;
   /*! background-color:#dc3e3e; */
-  height: 150em;
+  height: 100em;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

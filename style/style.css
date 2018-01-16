@@ -14,46 +14,44 @@ header{
       height: 1.5em;
       width:1.5em;
       margin-right:1em;
-
       }
-
     header > div > a:first-child> img{
       height: 1.5em;
       width: 10em;
       margin-left: 0em;
       left: 0;
     }
-
-
-nav{
-  overflow: auto;
-  white-space: nowrap;
-  background-color:#73D700; 
-  padding: .5em;
-  border-top: 1px solid #73eb00;
-}
-
+  nav{
+    overflow: auto;
+    white-space: nowrap;
+    background-color:#73D700;
+  }
     nav ul{
       display: flex;
       margin: 0 auto;
-      padding-left: 0;
+      padding: 0;
   }
-
-    nav ul li{
+    nav ul a{
+      text-decoration: none;
       font-size:1em;
       margin: 0 auto;
       list-style: none;
       color: white;
-      padding: 0 .7em;
+      width: 100%;
+      height: 1.5em;
+      text-align: center;
+      padding: .5em;
       border-left: 1px solid gray;
+      width: 100%;
     }
-    nav ul li:before{
- 
-    }
-    nav ul li:nth-child(1){
-      
+    nav ul a:nth-child(1){
       border-left: none;
     }
+    nav ul li:hover{
+      background-color: #ffad00;
+      height: 100%;
+    }
+
 
 body{
   font-size: 1.25em;
@@ -69,16 +67,12 @@ body{
       h2{
         font-size: 1.3em;
         margin: 0em;
-        /*! padding-bottom: .5em; */
-       
         padding-left: .5em;
       }
       p{
         font-size: .8em;
-        //line-height: 24px;
-        
+        margin-left: .7em;
       }
-
       img{
         height: 8em;
         width: 6em;
@@ -87,11 +81,9 @@ body{
 
       article{
         display:flex;
-        
-       flex-direction: column;
+        flex-direction: column;
         background-color: #F7F7F7;
-        background-color: gray;
-        text-align: center;
+        text-align: left;
         margin: 1em auto;
         width:90%;
         max-width: 15em;
@@ -114,130 +106,159 @@ body{
             text-decoration: underline;
           }
           article > div{
-             background-image: url("../img/cover.png");
+             background-image: url("../img/verhalen/zombie-small.png");
              background-position:center;
              background-size: 110%;
              height:8em;
-            border-radius: .5em;
-          
+            border-radius: 0.5em .5em 0 0;
           }
-article > div > button{
- background-color: #F7F7F7;
-  float:right;
-  width: 3em;
-  height: 3em;
-  margin: 0;
-  border-radius: 0 .5em;
-  padding: .1em;
-  background-image:url("../img/clock.svg");
-  background-repeat: no-repeat;
-  transition: all 2s;
-}
-.adding{
-  background-image: url("../img/check.svg");
-}
-nav > ul > li:nth-child(3){
-  position: relative;
-}
-.unread[data-badge]:after{
-  content:attr(data-badge);
-   position:absolute;
-   margin-left: .5em;
-   font-size:.8em;
-   background:green;
-   color:white;
-   width:1.5em;height:1.5em;
-   text-align:center;
-   
-   border-radius:50%;
-   box-shadow:0 0 1px #333;
-}
+              article > div > button{
+               background-color: #F7F7F7;
+                float:right;
+                width: 3em;
+                height: 3em;
+                margin: 0;
+                border-radius: 0 .5em;
+                padding: .1em;
+                background-image:url("../img/clock.svg");
+                background-repeat: no-repeat;
+                transition: all 1s;
+               border: none;
+               box-shadow: .1em .2em gray;
+              }
+              .adding{
+                background-image: url("../img/check.svg");
+              }
+              nav > ul > li:nth-child(3){
+                position: relative;
+
+              }
+              .unread{
+                transition: all .5s;
+              }
+              /* code from http://www.cssportal.com/blog/create-css-notification-badge/ */
+              .unread[data-badge]:after{
+                transition: all .5s;
+                content:attr(data-badge);
+                 position: absolute;
+                 display: inline-flex;
+                 margin-bottom: ;
+                 font-size:.8em;
+                 background:#ffad00;
+                 color:white;
+                 width: 2em;
+                height: 2em;
+                 text-align:center;
+
+                 border-radius:50%;
+                 box-shadow:0 0 1px #333;
+              }
+              /* End of copied code */
+
+          article:nth-child(2) > div{
+            background-image: url("../img/verhalen/zombie-small.png");
+          }
+          article:nth-child(3) > div{
+            background-image: url("../img/verhalen/alzheimer-small.png");
+            background-color: white;
+          }
+          article:nth-child(4) > div{
+            background-image: url("../img/verhalen/ongeboren-small.png");
+            background-color: white;
+          }
+          article:nth-child(6) > div{
+            background-image: url("../img/verhalen/ongeboren-small.png");
+            background-color: white;
+          }
+          article:nth-child(8) > div{
+            background-image: url("../img/verhalen/zombie-small.png");
+            background-color: white;
+          }
+          article:nth-child(9) > div{
+            background-image: url("../img/verhalen/alzheimer-small.png");
+            background-color: white;
+                }
+
 
 
 @media screen and (min-width:45em){
+  header nav ul{
+     width: 60%;
+  }
   main{
      box-sizing: content-box;
      display:grid;
      grid-template-columns: [left] 50% [right]50%;
      grid-gap: .5em;
-      }
+    }
+  p{
+    grid-column: 1;
+    
+  }
+
       h1{
         grid-column: left;
         text-align: left;
-
       }
-  h2{
-      /*! margin-top: 1em; */
-     / margin-bottom: -1.5em;
-  }
+      h2{
+        margin-bottom: -1.5em;
+      }
+
 
       article{
-        
         display:grid;
         height: 15em;
         grid-template-columns: 55% 45%;
         max-width:40em;
       }
-  
           article:nth-child(even){
             grid-column: left;
           }
-  
           article:nth-child(odd){
             grid-column: right;
-            /*! height: 12em; */
-            /*! width: ; */
           }
-  
+
           article > div{
             grid-column: 1/1;
             grid-row: 1;
-            background-size:contain;
             background-repeat: no-repeat;
             background-position: initial;
             height: inherit;
-            /*! margin-bottom: -1.5em; */
             max-height: 20em;
           }
           .add{
             background-color: #F7F7F7;
             float:left;
             border-radius: .5em 0;
-  }
-  
+          }
+
           article >h2{
             grid-column: 2;
             grid-row: 1;
             text-align: left;
             height: 2em;
           }
-  
            article > p{
             grid-column: 2;
              grid-row: 1;
             margin-top: 3.5em;
-           
           }
-  
+
           article > a{
             position: relative;
             top: 5em;
             grid-column: 2;
             grid-row:1;
           }
-          
-          
-         
+
+
+
   @media screen and (min-width: 55em){
-  
-    body{
-      
-    }
-    main{
+
+  main{
      grid-template-columns:1fr 1fr 1fr;
      margin: 0 3em;
     }
-   
       h1{
         grid-column-start: 1;
       }
@@ -245,42 +266,40 @@ nav > ul > li:nth-child(3){
       article:nth-child(odd){
         grid-column: initial;
       }
-    
       article:nth-child(even){
         grid-column: initial;
       }
-    
-    article{
-      display:flex;
-      flex-direction: column;
-      max-width: 15em;
-      
+      article{
+        display:flex;
+        flex-direction: column;
+        max-width: 15em;
     }
-    article > div{
-      width: 100%;
-      background-size: 110%;
-      background-position: center;
-      height: 15em;
-    }
-    article > p{
-      margin-top: 0;
-      margin-left: .5em;
-      height:  10em;
-      text-align: left;
-    }
-    article > h2{
-      margin-left: .5em;
-      padding: 0;
-    }
-    article > a{
-      position:initial;
-      margin-top: 0;
-    }
-    .add{
-      float: right;
-      border-radius: 0 .5em
-    }
-    .add:hover{
-      background-color:gray;
-    }
+          article > div{
+            width: 100%;
+            background-size: 110%;
+            background-position: center;
+            height: 15em;
+            border-bottom: .5px solid black;
+          }
+          article > p{
+            margin-top: 2.5em;
+            margin-left: .5em;
+            height:  10em;
+            text-align: left;
+          }
+          article > h2{
+            margin-left: .5em;
+            padding: 0;
+          }
+          article > a{
+            position:initial;
+            margin-top: 0;
+          }
+          .add{
+            float: right;
+            border-radius: 0 .5em
+          }
+          .add:hover{
+            background-color:gray;
+          }
   }

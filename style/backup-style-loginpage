@@ -1,0 +1,81 @@
+h2{
+  margin: 1em auto;
+  width: 50%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+form input{
+  font-family: 'Roboto_Condensed', sans-serif;
+}
+  input{
+  display:block;
+  margin:.5em 10%;
+  width:80%;
+  height: 3em;
+}
+input[type=button]{
+  height:3em;
+  width: 6em;
+  border-radius: .2em;
+  background-color:#ffad00;
+  border: none;
+  color: white;
+  font-weight:600;
+  float: right;
+}
+form > label{
+  margin: .5em 10%;
+  width: 80%;
+  font-size: .8em;
+}
+form:first-of-type > label:nth-child(4){
+  margin: 0;
+  width: 10em;
+  display:inline-block;
+  float:left;
+
+}
+form:first-of-type > label:nth-child(4)>input{
+   display:initial;
+  width: initial;
+
+}
+
+form > a{
+  display:block;
+margin: 1.5em auto;
+  width:80%;
+  text-align: center;
+
+}
+
+
+
+body > div{
+  position: relative;
+  text-align: center;
+}
+body> div> span{
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  padding: 1em;
+  font-weight: 300;
+  font-size: .8em;
+  display:inline-block
+}
+body > div:before{
+  content:" ";
+  position: absolute;
+  box-sizing: border-box;
+  top:50%;
+  left:1em;
+  right: 1em;
+  border-top: 1px solid #c8c8c8
+}
