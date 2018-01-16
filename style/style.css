@@ -98,6 +98,7 @@ body{
             text-align: center;
             padding: .1em;
             margin: auto;
+            
             border-radius: .3em;
             font-size: 1.2em
           }
@@ -126,6 +127,7 @@ body{
                border: none;
                box-shadow: .1em .2em gray;
               }
+
               .adding{
                 background-image: url("../img/check.svg");
               }
@@ -286,6 +288,7 @@ body{
             margin-left: .5em;
             height:  10em;
             text-align: left;
+            margin-bottom: 0;
           }
           article > h2{
             margin-left: .5em;
@@ -294,6 +297,7 @@ body{
           article > a{
             position:initial;
             margin-top: 0;
+            margin-bottom: .5em;
           }
           .add{
             float: right;
