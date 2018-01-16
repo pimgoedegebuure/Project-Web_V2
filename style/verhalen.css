@@ -1,0 +1,41 @@
+article:nth-child(2) > div{
+            background-image: url("../img/verhalen/zombie-small.png");
+          }
+          article:nth-child(3) > div{
+            background-image: url("../img/verhalen/zombie-small.png");
+            background-color: white;
+          }
+          article:nth-child(4) > div{
+            background-image: url("../img/verhalen/alzheimer-small.png");
+            background-color: white;
+          }
+          article:nth-child(5) > div{
+            background-image: url("../img/verhalen/ongeboren-small.png");
+            background-color: white;
+          }
+          article:nth-child(6) > div{
+            background-image: url("../img/verhalen/zombie-small.png");
+            background-color: white;
+          }
+          article:nth-child(7) > div{
+            background-image: url("../img/verhalen/alzheimer-small.png");
+            background-color: white;
+                }
+           article:nth-child(5) > div{
+            background-image: url("../img/verhalen/ongeboren-small.png");
+            background-color: white;
+          }
+          article:nth-child(6) > div{
+            background-image: url("../img/verhalen/zombie-small.png");
+            background-color: white;
+          }
+         article:nth-child(7) > div{
+            background-image: url("../img/verhalen/alzheimer-small.png");
+            background-color: white;
+          }
+          article:nth-child(8) > div{
+            background-image: url("../img/verhalen/ongeboren-small.png");
+            background-color: white;
+          }
+         
+         
